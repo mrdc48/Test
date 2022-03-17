@@ -38,7 +38,6 @@ body{
     z-index: 3;
     position: fixed;
     overflow-x: hidden;
-    align-items: center;
     place-items: center;
     height: 2.3rem;
     width: 100vw;
