@@ -216,7 +216,24 @@ body{
     place-items: center;
     overflow-Y: hidden;
 }
-
+  .slider_container {
+        display: grid;
+        grid-tremplate-areas: "m k";
+        grid-gap: 1.7rem;
+    }
+    .header .slider_container {
+        display: none;
+    }
+    .slider_container.active {
+        display: grid;
+    }
+    .header-data_1 {
+        grid-area: k;
+        padding: 2rem 1rem 0rem;
+    }
+    .header-data_slide {
+        grid-area: m;
+    }
 .inset::after,
 .inset::before {
     content: "";
