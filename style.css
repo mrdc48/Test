@@ -130,7 +130,7 @@ body{
 
 .header {
     width: 100%;
-    height: 45vh;
+    height: 100%;
     
     background: var(--primary-color);
 }
@@ -221,6 +221,7 @@ body{
         display: grid;
         grid-tremplate-areas: "m k";
         grid-gap: 1.7rem;
+        /* overflow-y: hidden; */
     }
     .header .slider_container {
         display: none;
@@ -230,7 +231,7 @@ body{
     }
     .header-data_1 {
         grid-area: k;
-        padding: 2rem 1rem 0rem;
+        padding: 2rem 1rem 2rem;
     }
     .header-data_slide {
         grid-area: m;
