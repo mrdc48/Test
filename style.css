@@ -235,6 +235,7 @@ body{
     }
     .header-data_slide {
         grid-area: m;
+        display: none;
     }
 .inset::after,
 .inset::before {
@@ -258,7 +259,10 @@ body{
     background: #FDFEFF;
     z-index: -2;
 }
-
+.previous,
+.next {
+display:  none;
+}
 @keyframes put {
     0% {
         transform: scale(0.95);
@@ -331,14 +335,6 @@ body{
     color: rgba(245, 252, 244, 0.85);
     /* line-height: 1.5rem; */
 }
-
-.image_1 {
-
-    padding: 4rem;
-    width: 70%;
-    height: 70%;
-}
-
 .footer_content-text_1 {
     padding-top: 8rem;
 }
@@ -405,12 +401,12 @@ body{
     width: 100%;
     height: 100%;
 }
-
+.image_1,
 .image_2,
 .image_3 {
     width: 70%;
     height: 70%;
-    padding: 1rem 4rem 1rem;
+    padding: 4rem;
 }
 
 .subPart_1,
@@ -801,7 +797,7 @@ height: 100%;
 
 /* screen size from 175px to 300px */
 
-/* @media screen and (min-width:768px) {
+ @media screen and (min-width:768px) {
     html {
         font-size: 18px;
     }
@@ -1015,9 +1011,9 @@ height: 100%;
     .footer_content-icons {
         grid-area: r;
     }
-} */
+} 
 
-/* @media screen and (min-width:1024px) {
+ @media screen and (min-width:1024px) {
     html {
         font-size: 25px;
     }
@@ -1450,7 +1446,7 @@ height: 100%;
         transform: scaleX(1);
         transition: transform 0.6s ease-out;
     }
-} */
+} 
 
 @media screen and (min-width: 250px) {
     html {
@@ -1469,15 +1465,252 @@ height: 100%;
         /* padding: 1rem 1rem; */
        
     }
+    .image_1, .image_2, .image_3{
+        width: 45%;
+        height: 45%;
+        margin: auto;
+        display: flex;
+
+        
+    }
     html {
       font-size: 58%;
     }
   }
+  @media screen and (min-width: 600px) {
+    html {
+      font-size: 62%;
+    }
+    .header-data_slide{
+        display: block;
+
+    }
+.previous, .next{
+    display: block;
+}
+    .header {
+        padding: 4rem 6rem;
+    }
+    .navigation:hover {
+        color: black;
+    }
+    .header-data_text-2 {
+        line-height: 1.7rem;
+    }
+    .header-data_slide {
+        padding: 7rem 1rem 2rem 2rem;
+    }
+    .set {
+        width: 250px;
+        height: 250px;
+    }
+    .set::before {
+        width: 250px;
+        top: 65px;
+        left: 5px;
+        height: 250px;
+    }
+    .inset {
+        width: 6rem;
+        height: 6rem;
+        top: 5%;
+    }
+    .slide_images {
+        width: 5rem;
+        height: 5rem;
+    }
+    .section-1_text-1,
+    .content_3-text_1,
+    .content_3-text_3 {
+        padding-left: 1rem;
+        text-align: unset;
+    }
+    .section-1_text-2,
+    .section-1_text-3 {
+        padding-left: 3rem;
+        line-height: 1.6rem;
+    }
+
+    .content_1-subPart {
+        margin-top: 0rem;
+    }
+    .circle {
+        width: 75px;
+        height: 75px;
+    }
+    .content_2 {
+        padding: 1rem;
+        overflow-Y: hidden;
+    }
+    .image_2,
+    .image_3 {
+        width: 90%;
+        height: 90%;
+        margin-top: 2.2rem;
+    }
+    .content_3 {
+        padding: 1rem;
+    }
+    .footer {
+        padding-top: rem;
+    }
+    .footer_content {
+        padding: 1rem;
+    }
+    .footer_content-text_1,
+    .footer_content-text_3 {
+        padding-top: 2rem;
+    }
+    .footer_content-text_2 {
+        line-height: 1.5rem;
+    }
+    .footer_content-icons {
+        padding: unset;
+    }
+    .previous,
+    .next {
+        padding: .5rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .previous {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
+    .navbar_head>.hamburger_menu {
+        display: none;
+    }
+    .header,
+    .content_1 {
+        display: grid;
+        place-itrems: center;
+    }
+    .navbar_links {
+        flex-direction: row;
+        transform: unset;
+        background: unset;
+        transition: unset;
+        padding-top: unset;
+        content: "";
+        width: unset;
+        height: unset;
+        top: -2.5rem;
+        overflow: hidden;
+        left: 9.4rem;
+        z-index: 5;
+    }
+    .navbar_links>.navigation {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    .slider_container {
+        display: grid;
+        grid-tremplate-areas: "m k";
+        grid-gap: 1.7rem;
+    }
+    .header .slider_container {
+        display: none;
+    }
+    .slider_container.active {
+        display: grid;
+    }
+    .header-data_1 {
+        grid-area: k;
+        padding: 2rem 1rem 0rem;
+    }
+    .header-data_slide {
+        grid-area: m;
+    }
+    .content_1 {
+        display: grid;
+        grid-tremplate-areas: "o p " "y y ";
+        grid-gap: 1.7rem;
+    }
+    .section-1 {
+        grid-area: o;
+    }
+    .image_1 {
+        grid-area: p;
+    }
+    .content_1-subPart {
+        grid-area: y;
+    }
+    .content_2-subPart {
+        display: grid;
+        grid-tremplate-areas: "l t" "l q" "z w" "z u";
+        grid-gap: 1.5rem;
+        overflow-y: hidden;
+    }
+    .subPart_1 {
+        grid-area: t;
+    }
+    .subPart_2 {
+        grid-area: q;
+        line-height: 1.8rem;
+    }
+    .image_2 {
+        grid-area: l;
+    }
+    .subPart_3 {
+        grid-area: w;
+    }
+    .subPart_4 {
+        grid-area: u;
+        line-height: 1.8rem;
+    }
+    .image_3 {
+        grid-area: z;
+    }
+    .content_3 {
+        display: grid;
+        grid-tremplate-areas: "i e" "n m";
+        grid-gap: 1.5rem;
+    }
+    .content_3-text_1 {
+        grid-area: i;
+    }
+    .content_3-text_2 {
+        grid-area: e;
+    }
+    .content_3-text_3 {
+        grid-area: n;
+    }
+    .content_3-text_m {
+        grid-area: z;
+    }
+    .footer_content {
+        display: grid;
+        grid-tremplate-areas: "c b" "l r";
+        grid-gap: 1.5rem;
+    }
+    .footer_content-text_1 {
+        grid-area: c;
+    }
+    .footer_content-text_2 {
+        grid-area: l;
+    }
+    .footer_content-text_3 {
+        grid-area: b;
+    }
+    .footer_content-icons {
+        grid-area: r;
+    }
+} 
+   
   @media screen and (min-width: 450px) {
     html {
       font-size: 62%;
     }
+    /* .image_1, .image_2, .image_3{
+        width: 45%;
+        height: 45%;
+        margin-left: 5rem;
 
+        
+    } */
    
   }
 
