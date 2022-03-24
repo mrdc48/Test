@@ -1016,7 +1016,7 @@ height: 100%;
     }
 }  */
 
- /* @media screen and (min-width:1024px) {
+  /* @media screen and (min-width:1024px) { 
     html {
         font-size: 25px;
     }
@@ -1449,7 +1449,8 @@ height: 100%;
         transform: scaleX(1);
         transition: transform 0.6s ease-out;
     }
-}  */
+}  
+*/
 
 @media screen and (min-width: 250px) {
     html {
@@ -1492,31 +1493,43 @@ height: 100%;
     display: block;
 }
     .header {
-        padding: 4rem 4rem;
+        padding: 2rem  0rem;
     }
     .navigation:hover {
         color: black;
     }
     .header-data_text-2 {
-        line-height: 1.7rem;
+        /* line-height: ; */
+        margin-top: 0rem;
+        font-size: 1.4rem;
     }
     .header-data_slide {
-        padding: 7rem 1rem 2rem 1rem;
+        padding: 8rem 3rem 1rem ;
+    }
+    .demo{
+        margin-top: unset;
+        font-size: 1.5rem;
+
+    }
+    .navigation:first-child {
+        font-weight: bold;
+        color: var(--secondary-color);
     }
     .set {
-        width: 14rem;
-        height: 14rem;
+        width: 15rem;
+        height: 15rem;
     }
     .set::before {
-        width: 14rem;
-        top: 5rem;
-        left: 4rem;
-        height: 14rem;
+        width: 15rem;
+        top: 6rem;
+        left: 5rem;
+        height: 15rem;
     }
     .inset {
         width: 6rem;
         height: 6rem;
-        top: 5%;
+        top: 15%;
+        left: 43%;
     }
     .slide_images {
         width: 5rem;
@@ -1572,6 +1585,7 @@ height: 100%;
     }
     .previous,
     .next {
+        display: none;
         padding: .5rem;
         position: absolute;
         top: 50%;
@@ -1593,6 +1607,10 @@ height: 100%;
     .content_1 {
         display: grid;
         place-items: center;
+    }
+    .navbar_head{
+        
+         background: var(--primary-color);
     }
     .navbar_links {
         /* place-items: center; */
@@ -1616,6 +1634,7 @@ height: 100%;
     }
     .slider_container {
         display: grid;
+        /* margin-top:1rem; */
         grid-template-areas: "m k";
         grid-gap: 1.7rem;
     }
@@ -1627,7 +1646,7 @@ height: 100%;
     }
     .header-data_1 {
         grid-area: k;
-        padding: 2rem 1rem 0rem;
+        padding: 2rem 1rem 1rem;
     }
     .header-data_slide {
         grid-area: m;
