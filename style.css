@@ -1542,11 +1542,16 @@ height: 100%;
         padding-left: 2rem;
         text-align: unset;
     }
+    .section-1{
+        padding: 1rem;
+    }
     .section-1_text-2,
     .section-1_text-3 {
+        font-size: 1.5rem;
         padding-left: 1.5rem;
         /* line-height: 1.6rem; */
     }
+
 
     .content_1-subPart {
         margin-top: 0rem;
