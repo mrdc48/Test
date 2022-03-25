@@ -332,9 +332,9 @@ display:  none;
 .content_2-text_2,
 .content_3-text_2,
 .content_3-text_4 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     padding: 1.4rem;
-    text-align: justify;
+    /* text-align: justify; */
     color: rgba(245, 252, 244, 0.85);
     /* line-height: 1.5rem; */
 }
@@ -416,7 +416,7 @@ display:  none;
 .subPart_1,
 .subPart_3 {
     padding: 0.8rem;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     color: #fff;
     opacity: 0.8;
     text-align: center;
@@ -427,7 +427,7 @@ display:  none;
     color: rgba(245, 252, 244, 0.85);
     padding: 1rem;
     font-size: 1.8rem;
-    text-align: justify;
+    /* text-align: justify; */
     /* line-height: 25px; */
 }
 
@@ -1547,8 +1547,8 @@ height: 100%;
     }
     .section-1_text-2,
     .section-1_text-3 {
-        font-size: 1.5rem;
-        padding-left: 1.5rem;
+        /* font-size: 1.5rem; */
+        padding-left: 1rem;
         /* line-height: 1.6rem; */
     }
 
