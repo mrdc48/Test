@@ -503,23 +503,24 @@ display:  none;
 /* about us css_start */
 
 .headerAbout {
-    width: 100vw;
-    height: auto;
-    padding: 5rem 1.5rem 2rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 6rem ;
     background: var(--primary-color);
     display: grid;
-    grid-tremplate-areas: "a a" "b c";
+    grid-template-areas: "a a" "b c";
     grid-gap: 2.5rem;
 }
 
 .header-data_2 {
     grid-area: a;
-    font-weight: 800;
+    /* font-weight: 800; */
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.1rem;
     text-decoration-line: underline;
-    line-height: 3.5rem;
-    padding-top: .5rem;
+    /* line-height: 3.5rem; */
+    margin-top: 1rem;
     color: #fff;
     opacity: 0.8;
 }
@@ -527,20 +528,23 @@ display:  none;
 .header-data_3 {
     color: #fff;
     opacity: 0.8;
+    margin: .7rem 3rem;
+   /* text-align: center; */
     grid-area: b;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     /*line-height: 1.9rem;*/
 }
 
 .image_first {
     grid-area: c;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .Aside {
     width: 100%;
     height: 100%;
+    overflow-y: hidden;
     position: relative;
     background-color: #1d1d2e;
 }
@@ -568,16 +572,17 @@ display:  none;
 .subData {
     width: 100%;
     height: 100%;
+    overflow-y: hidden;
     display: grid;
     grid-gap: 0rem;
-    grid-tremplate-areas: "f f " "g i " "h h";
+    grid-template-areas: "f f " "g i " "h h";
 }
 
 .textData_1 {
-    padding-top: 9rem;
+    padding-top: 12.5rem;
     margin: 1.8rem;
     text-align: justify;
-    line-height: 27px;
+    /* line-height: 27px; */
     grid-area: f;
     color: #fff;
     opacity: 0.8;
@@ -586,8 +591,8 @@ display:  none;
 .subData .image_second {
     grid-area: g;
     padding: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
 }
 
 .textData_2 {
@@ -628,7 +633,7 @@ display:  none;
     background: #141426;
     padding: 6rem 1.7rem 2rem;
     display: grid;
-    place-itrems: center;
+    place-items: center;
     grid-gap: 2rem;
     width: 100%;
     height: 100%;
@@ -661,9 +666,9 @@ display:  none;
     place-itrems: center;
 }
 .tremplates{
-grid-tremplate-areas: " eleven twelve"
+grid-template-areas: " eleven twelve"
 "fifty sixty";
-grid-tremplate-rows: repeat(2,40rem);
+grid-template-rows: repeat(2,40rem);
 }
 .tremplate_1{
 grid-area: eleven;
@@ -1759,6 +1764,9 @@ height: 100%;
 @media (max-width: 199px) {
     html {
       font-size: 40%;
+    }
+    .textData_1 {
+        padding-top: 20rem;
     }
     /* .header {
         padding: 6rem 4rem;
