@@ -1498,7 +1498,11 @@ height: 100%;
 .previous, .next{
     display: block;
 }
+.content_1{
+    padding: 0rem 1rem;
+}
     .header {
+        /* height: 85vh; */
         padding: 2rem  0rem;
     }
     .navigation:hover {
@@ -1550,9 +1554,13 @@ height: 100%;
     .section-1{
         padding: 1rem;
     }
+
+    .content_2-text_2{
+        font-size: 1.5rem;
+    }
     .section-1_text-2,
     .section-1_text-3 {
-        /* font-size: 1.5rem; */
+        font-size: 1.5rem;
         padding-left: 1rem;
         /* line-height: 1.6rem; */
     }
@@ -1568,12 +1576,6 @@ height: 100%;
     .content_2 {
         padding: 1rem;
         overflow-Y: hidden;
-    }
-    .image_2,
-    .image_3 {
-        width: 90%;
-        height: 90%;
-        margin-top: 2.2rem;
     }
     .content_3 {
         padding: 1rem;
@@ -1665,15 +1667,17 @@ height: 100%;
     .content_1 {
         display: grid;
         grid-template-areas: "o p " "y y ";
-        grid-gap: 1.7rem;
+        /* grid-gap: 1.7rem; */
     }
     .section-1 {
         grid-area: o;
+    
+
     }
     .image_1 {
-        padding: 0;
-        width:60%;
-        height: 50%;
+        padding: 2rem;
+        width:65%;
+        height:70%;
         grid-area: p;
     }
     .content_1-subPart {
@@ -1682,34 +1686,42 @@ height: 100%;
     .content_2-subPart {
         display: grid;
         grid-template-areas: "l t" "l q" "z w" "z u";
-        grid-column-gap: 1.5rem;
+        /* grid-column-gap: 1.5rem; */
         overflow-y: hidden;
     }
     .subPart_1 {
         grid-area: t;
+        font-size: 2.4rem;
     }
     .subPart_2 {
         grid-area: q;
+        
+        font-size: 1.5rem;
         /* line-height: 1.8rem; */
     }
     .image_2 {
-        grid-area: l;
+        /* grid-area: l; */
     }
     .subPart_3 {
+        font-size: 2.4rem;
+
         grid-area: w;
     }
     .subPart_4 {
         grid-area: u;
+        font-size: 1.5rem;
         /* line-height: 1.8rem; */
     }
     .image_3 {
-        grid-area: z;
-        width: 60%;
-        height: 50%;
+        /* grid-area: z; */
+        width: 65%;
+        height: 70%;
+        padding: 2rem;
     }
     .image_2 {
-        width: 60%;
-        height: 60%;
+        padding: 2rem;
+        width: 65%;
+        height: 70%;
     }
     .content_3 {
         display: grid;
@@ -1720,7 +1732,11 @@ height: 100%;
         grid-area: i;
     }
     .content_3-text_2 {
+        font-size: 1.5rem;
         grid-area: e;
+    }
+    .content_3-text_4{
+        font-size: 1.5rem;
     }
     .content_3-text_3 {
         grid-area: n;
